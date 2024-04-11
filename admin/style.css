@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: #333;
-  background-color: #F7F3E9; /* Crèmekleurig */
+  background-color: #F7F3E9; 
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 /* Header styles */
 header {
   height: 100px;
-  background-color: #B92B27; /* Rijk Rood */
+  background-color: #B92B27; 
   color: #fff;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@ header {
 .header-options button {
   height: 40px;
   width: 100px;
-  background-color: #4B6D41; /* Olijfgroen */
+  background-color: #4B6D41; 
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -45,7 +45,7 @@ header {
 .header-options button.logo {
   height: 40px;
   width: 300px;
-  background-color: #ffffff; /* Terracotta */
+  background-color: #ffffff; 
   color: #000000;
   border: none;
   border-radius: 5px;
@@ -56,7 +56,7 @@ header {
 }
 
 .header-options button:hover {
-  background-color: #D9A718; /* Goudgeel */
+  background-color: #D9A718; 
 }
 
 /* Login and logout button styles */
@@ -85,11 +85,11 @@ td {
 th {
   font-weight: bold;
   color: #fff;
-  background-color: #555; /* Olijfgroen */
+  background-color: #555; 
 }
 
 tr:nth-child(even) {
-  background-color: #F7F3E9; /* Crèmekleurig */
+  background-color: #F7F3E9; 
 }
 
 /* Form styles */
@@ -106,7 +106,7 @@ form label {
 
 form input[type="text"],
 form input[type="password"] {
-  width: calc(100% - 20px); /* Adjusted to accommodate padding */
+  width: calc(100% - 20px); 
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -119,23 +119,23 @@ form input[type="submit"] {
 .form-message {
   margin-top: 1rem;
   color: #fff;
-  background-color: #555; /* Olijfgroen */
+  background-color: #555; 
   padding: 10px;
   border-radius: 5px;
 }
 
 .form-message.success {
-  background-color: #4CAF50; /* Goudgeel */
+  background-color: #4CAF50; 
 }
 
 .form-message.error {
-  background-color: #696969; /* Rijk Rood */
+  background-color: #696969; 
 }
 
 .button {
   height: 40px;
   width: 100px;
-  background-color: #555; /* Olijfgroen */
+  background-color: #555; 
   color: #fff;
   border: none;
   justify-content: center;
@@ -149,8 +149,8 @@ form input[type="submit"] {
 
 .menu-container {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to next line if needed */
-  justify-content: center; /* Center cards horizontally */
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 /* Menu card styles */
@@ -158,7 +158,7 @@ form input[type="submit"] {
   width: 500px;
   height: 600px;
   margin: 10px;
-  background-color: #FFFFFF; /* Crèmekleurig */
+  background-color: #FFFFFF; 
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -168,14 +168,14 @@ form input[type="submit"] {
 .gerechtblok .gerechtnaam {
   font-size: 30px;
   font-weight: bold;
-  color: #333333; /* Terracotta */
+  color: #333333; 
 }
 
 /* Menu card description */
 .gerechtblok .gerechtbeschrijving {
   margin-top: 10px;
   font-size: 20px;
-  color: #5e5d5d; /* Rijk Rood */
+  color: #5e5d5d; 
 }
 
 /* Menu card price */
@@ -183,14 +183,14 @@ form input[type="submit"] {
   margin-top: 10px;
   font-size: 25px;
   font-weight: bold;
-  color: #009900; /* Goudgeel */
+  color: #009900; 
 }
 
 /* Responsive image */
 .gerechtblok img {
   max-width: 100%;
   min-width: 400px;
-  min-height: 200px; /* Adjust the minimum height as needed */
-  object-fit: cover; /* Ensure the entire image is visible */
+  min-height: 200px; 
+  object-fit: cover; 
   border-radius: 5px;
 }
