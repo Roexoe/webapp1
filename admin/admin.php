@@ -1,9 +1,25 @@
 <?php
+session_start();
+?>
+
+<?php
 include_once("connectie.php");
-include_once("header.php")
+include_once("header.php");
 /**
  * @var PDO $pdo
  */
+
+
+
+
+// Controleer of de gebruiker is ingelogd
+if (!isset($_SESSION['username'])) {
+   // wanneer niet ingelogd terug naar index.php
+    header('Location: index.php');
+    exit;
+}
+// Gebruikersnaam ophalen van ingelogd gebruiker
+$username = $_SESSION['username'];
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +35,8 @@ include_once("header.php")
 <body>
 <div>
     <button class="button" type="button" onclick="location.href='add_gerecht.php';">Voeg een Gerecht toe</button>
+   
+        <h1>Welkom op het admin paneel van de Il Viaggio dei Sapori Bistro, <?php echo $username; ?>!</h1>
 </div>
 </body>
 </form>

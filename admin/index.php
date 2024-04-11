@@ -1,6 +1,8 @@
 <?php
 ob_start(); 
-include_once("header.php")
+include_once("header.php");
+
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -8,7 +10,7 @@ include_once("header.php")
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <title>Il Viaggio dei Sapori Bistro</title>
 </head>
 <body>
@@ -30,8 +32,8 @@ if (isset($_POST['inloggen'])) {
     // Check if the username and password are set
     if (isset($_POST['username']) && isset($_POST['password'])) {
         // Replace 'your_username' and 'your_password' with the actual username and password you want to check
-        $valid_username = 'Lola';
-        $valid_password = 'badaap';
+        $valid_username = 'Admin';
+        $valid_password = 'Admin@';
 
         // Retrieve the submitted username and password
         $submitted_username = $_POST['username'];
@@ -39,6 +41,8 @@ if (isset($_POST['inloggen'])) {
 
         // Check if the submitted username and password match the valid ones
         if ($submitted_username === $valid_username && $submitted_password === $valid_password) {
+            // Set a session variable to indicate that the user is logged in
+            $_SESSION['username'] = $submitted_username;
             echo "Login successful!";
             // Redirect to admin.php
             header('Location: admin.php');
