@@ -8,9 +8,6 @@
 </head>
 <body>
     
-</body>
-
-<header>
 <header>
 <div class="header-options">
     <button type="button" onclick="location.href='menu.php';">Menu</button>
