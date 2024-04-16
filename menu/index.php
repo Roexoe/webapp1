@@ -1,6 +1,6 @@
 <?php
 ob_start(); 
-include_once("header.php");
+include_once("../admin/header.php");
 
 session_start();
 
@@ -45,7 +45,7 @@ if (isset($_POST['inloggen'])) {
             $_SESSION['username'] = $submitted_username;
             echo "Login successful!";
             // Redirect to admin.php
-            header('Location: admin.php');
+            header('Location: ../admin/admin.php');
             exit;
         } else {
             echo "Invalid username or password";

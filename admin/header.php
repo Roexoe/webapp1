@@ -15,11 +15,11 @@
     <?php
     if (isset($_SESSION['username'])) {
         // wanneer ingelogd Logout button
-        echo '<button type="button" onclick="location.href=\'index.php\';">Logout</button>';
+        echo '<button type="button" onclick="location.href=\'../menu/index.php\';">Logout</button>';
     } else {
         // Wanneer niet ingelogd Login button
 
-        echo '<button type="button" onclick="location.href=\'index.php\';">Login</button>';
+        echo '<button type="button" onclick="location.href=\'../menu/index.php\';">Login</button>';
     }
     ?>
 </div>

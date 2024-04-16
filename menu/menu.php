@@ -1,6 +1,6 @@
 <?php
-include_once("connectie.php");
-include_once("header.php");
+include_once("../admin/connectie.php");
+include_once("../admin/header.php");
 
 /**
  * @var PDO $pdo
