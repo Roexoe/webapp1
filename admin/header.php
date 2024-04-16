@@ -10,8 +10,8 @@
     
 <header>
 <div class="header-options">
-    <button type="button" onclick="location.href='menu.php';">Menu</button>
-    <button class="logo" type="button" onclick="location.href='menu.php';">Il Viaggio dei Sapori Bistro</button>
+    <button type="button" onclick="location.href='../menu/menu.php';">Menu</button>
+    <button class="logo" type="button" onclick="location.href='../menu/menu.php';">Il Viaggio dei Sapori Bistro</button>
     <?php
     if (isset($_SESSION['username'])) {
         // wanneer ingelogd Logout button

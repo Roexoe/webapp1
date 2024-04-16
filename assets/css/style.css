@@ -31,7 +31,8 @@ header {
 
 .header-options button {
   height: 40px;
-  width: 100px;
+  width: auto; /* Breedte automatisch aanpassen aan de inhoud */
+  padding: 0 10px; /* Voeg wat ruimte toe rondom de knoptekst */
   background-color: #4B6D41; 
   color: #fff;
   border: none;
@@ -44,7 +45,8 @@ header {
 
 .header-options button.logo {
   height: 40px;
-  width: 300px;
+  width: auto; /* Breedte automatisch aanpassen aan de inhoud */
+  padding: 0 10px; /* Voeg wat ruimte toe rondom de knoptekst */
   background-color: #ffffff; 
   color: #000000;
   border: none;
@@ -68,11 +70,43 @@ header {
   margin-right: auto;
 }
 
+/* Mediaquery voor schermformaten kleiner dan 768px (smartphones) */
+@media only screen and (max-width: 767px) {
+  header {
+    height: 80px; /* Verminder de hoogte van de header voor kleinere schermen */
+  }
+
+  .header-options button,
+  .header-options button.logo {
+    height: 30px; /* Verminder de hoogte van de knoppen */
+    font-size: 14px; /* Verminder de lettergrootte van de knoppen */
+  }
+}
+
 /* Table styles */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 2rem;
+}
+
+/* Mediaquery voor schermformaten kleiner dan 768px (smartphones) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Mediaquery voor schermformaten tussen 768px en 1024px (tablets) */
+@media only screen and (max-width: 768px) {
+  th:nth-child(3), td:nth-child(3) {
+      display: none; 
+  }
+  table {
+    font-size: 12px; 
+}
+th, td {
+    padding: 5px; 
+}
 }
 
 th,
@@ -155,13 +189,19 @@ form input[type="submit"] {
 
 /* Menu card styles */
 .gerechtblok {
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  padding: 20px;
   margin: 10px;
-  background-color: #FFFFFF; 
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .gerechtblok {
+    width: calc(100% - 40px); /* Maak de breedte 100% minus de padding om de gerechtblokken volledig te laten meebewegen */
+    padding: 10px; /* Voeg padding toe om de gerechtblokken meer ruimte te geven */
+  }
 }
 
 /* Menu card title */
@@ -188,9 +228,6 @@ form input[type="submit"] {
 
 /* Responsive image */
 .gerechtblok img {
-  max-width: 100%;
-  min-width: 400px;
-  min-height: 200px; 
-  object-fit: cover; 
-  border-radius: 5px;
+  max-width: 100%; 
+  height: auto; 
 }
